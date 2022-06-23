@@ -17,9 +17,9 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title', 3000);
             $table->string('cover')->nullable();
-            $table->string('excerpt', 3000)->nullabale();
-            $table->text('body', 3000)->nullabale();
-            $table->string('author', 3000)->nullabale();
+            $table->string('excerpt', 3000)->nullable();
+            $table->text('body', 3000)->nullable();
+            $table->string('author', 3000)->nullable();
             $table->timestamps();
         });
     }

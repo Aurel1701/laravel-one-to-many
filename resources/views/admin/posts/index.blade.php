@@ -39,7 +39,7 @@
                   <a class="btn btn-secondary text-white btn-sm" href="{{route('admin.posts.edit', $post->id)}}">Edit</a>
                   
                   <!-- cancel button -->
-                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete-post-{{$post->id}}">
+                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete-post-{{$post->id}}">
                         Delete
                   </button>
                   <!-- cancel button -->
