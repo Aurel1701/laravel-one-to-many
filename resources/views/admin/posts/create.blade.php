@@ -20,6 +20,18 @@
         <label for="cover" class="form-label me-2">cover</label>
         <input type="text" name="cover" id="cover" class="form-control  @error('cover') is-invalid @enderror" placeholder="Insert cover" value="{{old('cover')}}">
     </div>
+    
+    <div class="mb-3">
+        <label for="category_id" class="form-label">Categories</label>
+        <select class="form-control @error('category_id') is-invalid @enderror" name="category_id" id="category_id">
+            <option value="">Select a category</option>
+            @foreach($categories as $category)
+            <!-- TODO:
+            Use old() function -->
+            <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+        </select>
+    </div>
    
     <div class="mb-4">
         <label for="body">Body</label>
